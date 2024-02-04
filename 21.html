@@ -3,14 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SITE1</title>
+    <style>
+        @keyframes rainbow {
+            0% { color: red; }
+            16.666% { color: orange; }
+            33.333% { color: yellow; }
+            50% { color: green; }
+            66.666% { color: blue; }
+            83.333% { color: indigo; }
+            100% { color: violet; }
+        }
+
+        body {
+            background-color: rgb(192, 192, 192);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        h1, p {
+            text-align: center;
+            font-size: 120%;
+
+        p {
+            animation: rainbow 7s linear infinite; 
+        }
+    </style>
 </head>
-<center>
-    
-<body style="background-color:rgb(32, 66, 55);">
-    <h1>HTML Articles</h1>
-    <p> hey I was trying to create something new and it is something really good</p>
-    
- </body>
-</center>
+<body>
+    <div>
+        <h1>SITE1</h1>
+        <p>hey I was trying to create something new and it is something really good</p>
+    </div>
+</body>
 </html>
