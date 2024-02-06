@@ -22,21 +22,32 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            flex-direction: column; 
         }
 
-        h1, p {
+        h1, p, h2 {
             text-align: center;
             font-size: 120%;
+        }
 
-        p {
+        .rainbow-text {
             animation: rainbow 7s linear infinite; 
+        }
+
+        img {
+            max-width: 20%;
+            margin: center; /* Center the image horizontally */
+            align-self: center; /* Center the image vertically */
         }
     </style>
 </head>
 <body>
     <div>
-        <h1>SITE1</h1>
-        <p>hey I was trying to create something new and it is something really good</p>
+        <h1 class="rainbow-text">SITE1</h1>
+        <p class="rainbow-text">hey I was trying to create something new and it is something really good</p>
+        <h2>here I can show you a cat</h2>
+        <img src="KS-crunchy-cat-comp.webp" alt="cat">
+        <p style="color:rebeccapurple">also I've been adding some new stuff to show how my progress in this site is going on</p>
     </div>
 </body>
 </html>
