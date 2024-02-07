@@ -35,19 +35,47 @@
         }
 
         img {
-            max-width: 20%;
-            margin: center; /* Center the image horizontally */
-            align-self: center; /* Center the image vertically */
+            max-width: 100%;
+            margin: auto;
+            display: block;
+        }
+
+        button {
+            margin-top: 20px; 
+            text-align: center;
+            transition: transform 0.3s ease; 
+
+        }
+
+        button:hover {
+            transform: scale(1.1); 
+        }
+
+        
+        .container {
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <div>
+    <div class="container">
         <h1 class="rainbow-text">SITE1</h1>
         <p class="rainbow-text">hey I was trying to create something new and it is something really good</p>
-        <h2>here I can show you a cat</h2>
-        <img src="KS-crunchy-cat-comp.webp" alt="cat">
+        <h2>here I can show you a cat (click in the image to do it) </h2>
+        <button style="color:brown;" onclick="toggleImage()">Toggle Image</button>
+        <img id="catImage" src="KS-crunchy-cat-comp.webp" alt="cat" style="display: none;">
         <p style="color:rebeccapurple">also I've been adding some new stuff to show how my progress in this site is going on</p>
     </div>
+
+    <script>
+        function toggleImage() {
+            var image = document.getElementById("catImage");
+            if (image.style.display === "none") {
+                image.style.display = "block";
+            } else {
+                image.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
