@@ -77,6 +77,17 @@
                 image.style.display = "none";
             }
         }
+
+        const letters = ['HI', 'GUYS'];
+
+    
+    letters.forEach((letter, index) => {
+        const letterElement = document.createElement('div');
+        letterElement.textContent = letter;
+        letterElement.classList.add('letter');
+        letterElement.style.left = `${index * 30}px`; 
+        document.body.appendChild(letterElement);
+    });
     </script>
 </body>
 </html>
